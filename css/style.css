@@ -64,6 +64,11 @@ button {
   font-weight: 900;
 }
 
+.btn-email-me:hover {
+  background-color: white;
+  color: black;
+}
+
 .logo {
   width: 40px;
   height: 40px;
@@ -189,14 +194,15 @@ button {
 /*about content*/
 .about-container {
   background-color: black;
-  width: 100vmax;
-  height: 600px;
+  max-width: 100%;
+  height: 700px;
   left: 0px;
   right: 0px;
   padding-top: 20px;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 50px;
   box-sizing: border-box;
+  gap: 20%;
 }
 
 .about-title {
@@ -204,4 +210,30 @@ button {
   font-family: "Outfit", sans-serif;
   font-size: 60px;
   font-weight: 900;
+}
+
+.about-description {
+  margin-left: 20%;
+  color: white;
+  text-align: justify;
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+  margin-top: 4%;
+  line-height: 2;
+}
+
+/*projects content*/
+.services-container {
+  width: 100%;
+  height: 600px;
+  background-color: black;
+  color: white;
+  font-family: "Inter", sans-serif;
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+.services-layout {
+  display: flex;
+  justify-content: center;
 }
