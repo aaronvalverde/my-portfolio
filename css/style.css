@@ -1,0 +1,207 @@
+/*navigation bar*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border-style: none;
+  cursor: pointer;
+}
+
+.nav-bar {
+  background-color: black;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.nav-bar nav {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  position: fixed;
+  padding-left: 20px;
+  padding-right: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.nav-buttons {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-buttons ul {
+  align-items: center;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: "Inter", sans-serif;
+  margin-right: 20px;
+}
+
+.nav-buttons ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-email-me {
+  background-color: #0736fe;
+  width: 100px;
+  height: 40px;
+  border-radius: 6px;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: black;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-size: 15px;
+}
+
+.dot {
+  color: #0736fe;
+}
+
+/*content root*/
+.content-root {
+  top: 60px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+/*home content*/
+.home-container {
+  width: 100%;
+  height: 580px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.sticky-note {
+  background-color: #0736fe;
+  width: 50%;
+  height: 100%;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-top: 20px;
+  gap: 10px;
+}
+
+.s-text {
+  font-family: "Redacted Script", sans-serif;
+  font-weight: 900;
+  font-size: 110px;
+  color: white;
+  letter-spacing: 0;
+  text-shadow:
+    2px 2px 0 white,
+    -2px -2px 0 white;
+}
+
+.first-text {
+  font-family: "Outfit", sans-serif;
+  font-size: 110px;
+  font-weight: 900;
+  color: white;
+}
+
+.name {
+  font-family: "Lacquer", sans-serif;
+  font-size: 80px;
+  color: white;
+}
+
+.intro {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: end;
+  padding-right: 20px;
+}
+
+.profession1 {
+  font-family: "Outfit", sans-serif;
+  font-size: 90px;
+  font-weight: 900;
+}
+
+.profession2 {
+  font-family: "Outfit", sans-serif;
+  font-size: 75px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.profile-description {
+  font-family: "Outfit", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.intro-buttons {
+  margin-top: 20px;
+}
+
+.btn-see-more,
+.btn-cv {
+  background-color: black;
+  width: 120px;
+  height: 50px;
+  border-radius: 6px;
+  color: white;
+  font-size: 15px;
+  font-family: "Lacquer", sans-serif;
+}
+
+.btn-see-more:hover,
+.btn-cv:hover {
+  background-color: #0736fe;
+  color: white;
+  border-color: #0736fe;
+}
+/*about content*/
+.about-container {
+  background-color: black;
+  width: 100vmax;
+  height: 600px;
+  left: 0px;
+  right: 0px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.about-title {
+  color: white;
+  font-family: "Outfit", sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+}
