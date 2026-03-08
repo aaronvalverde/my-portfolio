@@ -112,6 +112,7 @@ button {
   padding-left: 20px;
   padding-right: 10px;
   padding-top: 20px;
+  border-bottom-right-radius: 6px;
   gap: 10px;
 }
 
@@ -301,8 +302,10 @@ h3 {
 
 /*projects contents*/
 .skills-container {
+  background-color: black;
   width: 100%;
-  height: 600px;
+  height: 650px;
+  padding-bottom: 30px;
   display: flex;
   gap: 20px;
 }
@@ -314,6 +317,7 @@ h3 {
   padding-left: 20px;
   background-color: white;
   border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
   width: 25%;
 }
 
@@ -324,7 +328,6 @@ h3 {
   gap: 20px;
   display: grid;
   flex-direction: column;
-  padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
   border-bottom-left-radius: 6px;
@@ -333,6 +336,7 @@ h3 {
 .first-skill-row,
 .second-skill-row {
   display: flex;
+  justify-content: center;
   gap: 20px;
   width: 100%;
   height: 100%;
@@ -342,6 +346,12 @@ h3 {
 .second-skill,
 .third-skill,
 .fourth-skill {
+  font-family: "Lacquer", sans-serif;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 20px;
   background-color: #181818;
   color: white;
   width: 100%;
@@ -349,16 +359,24 @@ h3 {
   border-radius: 6px;
   padding-top: 40px;
   padding-left: 40px;
-  transition: all 0.3 ease;
+  transition: all 0.3s ease;
 }
 
 .first-skill:hover,
 .second-skill:hover,
 .third-skill:hover,
 .fourth-skill:hover {
-  transform: translateY(-6px);
+  transform: translateY(-7px);
   background-color: #1f1f1f;
-  transition: all 0.3 ease;
+  transition: all 0.3s ease;
+}
+
+.first-skill i,
+.second-skill i,
+.third-skill i,
+.fourth-skill i{
+    font-size: 60px;
+    margin-right: 45px;
 }
 
 /*contact content*/
@@ -372,10 +390,99 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 100px;
+  font-size: 60px;
+  font-weight: 900;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contact-title {
+  font-family: "Outfit", sans-serif;
+  text-align: center;
 }
 
 .cards-container {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-end;
   gap: 20px;
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+}
+
+.email-card,
+.linkedin-card,
+.github-card {
+  font-family: "Lacquer", sans-serif;
+  align-items: center;
+  font-size: 22px;
+  width: 25%;
+  height: 95%;
+  background-color: #0736fe;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  padding-top: 40px;
+  row-gap: 40px;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+}
+
+.email-card:hover,
+.linkedin-card:hover,
+.github-card:hover {
+  height: 100%;
+  cursor: pointer;
+}
+
+.email-click,
+.linkedin-click,
+.github-click {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "Outfit", sans-serif;
+}
+
+.email-card:hover .email-click,
+.linkedin-card:hover .linkedin-click,
+.github-card:hover .github-click {
+  opacity: 1;
+  font-family: "Outfit", sans-serif;
+}
+
+.email-card {
+  background-color: black;
+  color: white;
+}
+
+.linkedin-card {
+  background-color: white;
+  border-color: black;
+  border-width: 3px;
+  color: black;
+  border-style: solid;
+}
+
+.github-card {
+  background-color: #0736fe;
+  color: white;
+}
+
+.github-card i,
+.email-card i {
+  font-size: 45px;
+  display: block;
+  color: white;
+}
+
+.linkedin-card i {
+  font-size: 45px;
+  display: block;
+  color: black;
 }
