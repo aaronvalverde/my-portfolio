@@ -274,7 +274,8 @@ button {
 .second-item:hover,
 .third-item:hover,
 .fourth-item:hover {
-  background-color: #e6e6e6;
+  background-color: #0736fe;
+  color: white;
   transform: translateY(-6px);
   transition: all 0.3s ease;
 }
@@ -296,4 +297,85 @@ button {
 
 h3 {
   font-family: "Lacquer", sans-serif;
+}
+
+/*projects contents*/
+.skills-container {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  gap: 20px;
+}
+
+.title-column {
+  font-family: "Inter", sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  padding-left: 20px;
+  background-color: white;
+  border-top-right-radius: 6px;
+  width: 25%;
+}
+
+.skills-column {
+  background-color: black;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  display: grid;
+  flex-direction: column;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom-left-radius: 6px;
+}
+
+.first-skill-row,
+.second-skill-row {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.first-skill,
+.second-skill,
+.third-skill,
+.fourth-skill {
+  background-color: #181818;
+  color: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  padding-top: 40px;
+  padding-left: 40px;
+  transition: all 0.3 ease;
+}
+
+.first-skill:hover,
+.second-skill:hover,
+.third-skill:hover,
+.fourth-skill:hover {
+  transform: translateY(-6px);
+  background-color: #1f1f1f;
+  transition: all 0.3 ease;
+}
+
+/*contact content*/
+.contact-container {
+  padding-top: 40px;
+  width: 100%;
+  height: 650px;
+  background-color: white;
+  margin-top: 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.cards-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
