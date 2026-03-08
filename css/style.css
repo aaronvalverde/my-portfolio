@@ -38,6 +38,7 @@ button {
   justify-content: space-between;
   position: sticky;
   top: 0;
+  font-size: 14px;
   z-index: 100;
 }
 .nav-buttons ul {
@@ -192,6 +193,7 @@ button {
   color: white;
   border-color: #0736fe;
 }
+
 /*about content*/
 .about-container {
   background-color: black;
@@ -374,9 +376,9 @@ h3 {
 .first-skill i,
 .second-skill i,
 .third-skill i,
-.fourth-skill i{
-    font-size: 60px;
-    margin-right: 45px;
+.fourth-skill i {
+  font-size: 60px;
+  margin-right: 45px;
 }
 
 /*contact content*/
