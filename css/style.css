@@ -302,6 +302,14 @@ h3 {
   font-family: "Lacquer", sans-serif;
 }
 
+.first-item i,
+.second-item i,
+.third-item i,
+.fourth-item i {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
 /*projects contents*/
 .skills-container {
   background-color: black;
@@ -487,4 +495,203 @@ h3 {
   font-size: 45px;
   display: block;
   color: black;
+}
+
+@media (max-width: 786px) {
+  .nav-bar nav {
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .logo {
+    width: 30px;
+    height: 30px;
+    font-size: 11px;
+  }
+
+  .nav-buttons ul {
+    display: none;
+  }
+
+  .btn-email-me {
+    width: 80px;
+    height: 35px;
+    font-size: 12px;
+  }
+
+  .home-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .sticky-note {
+    width: 100%;
+    border-bottom-right-radius: 0;
+  }
+
+  .intro {
+    align-items: flex-start;
+    text-align: left;
+    padding: 20px;
+  }
+
+  .s-text,
+  .first-text {
+    font-size: 30px;
+  }
+
+  .name {
+    font-size: 30px;
+  }
+
+  .profession1 {
+    font-size: 40px;
+  }
+
+  .profession2 {
+    font-size: 38px;
+  }
+
+  .profile-description {
+    font-size: 18px;
+  }
+
+  .btn-see-more,
+  .btn-cv {
+    height: 30px;
+    width: 90px;
+    font-size: 12px;
+  }
+
+  .about-container {
+    height: auto;
+  }
+
+  .about-title {
+    font-size: 40px;
+  }
+
+  .about-description {
+    margin-left: 0;
+    font-size: 15px;
+  }
+
+  .services-container {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .service-title {
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .first-row,
+  .second-row {
+    flex-direction: column;
+  }
+
+  .first-item,
+  .second-item,
+  .third-item,
+  .fourth-item {
+    height: auto;
+    padding: 30px;
+    transition: none;
+    transform: none;
+  }
+
+  .first-item:hover,
+  .second-item:hover,
+  .third-item:hover,
+  .fourth-item:hover {
+    background-color: white;
+    color: black;
+    transition: none;
+    transform: none;
+  }
+
+  .skills-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .title-column {
+    width: 100%;
+    font-size: 40px;
+    border-radius: 0;
+  }
+
+  .first-skill-row,
+  .second-skill-row {
+    flex-direction: column;
+  }
+
+  .first-skill,
+  .second-skill,
+  .third-skill,
+  .fourth-skill {
+    height: auto;
+    padding: 30px;
+    font-size: 18px;
+    transition: none;
+    transform: none;
+  }
+
+   .first-skill:hover,
+  .second-skill:hover,
+  .third-skill:hover,
+  .fourth-skill:hover {
+    background-color: #181818;
+    transition: none;
+    transform: none;
+  }
+
+  .first-skill i,
+  .second-skill i,
+  .third-skill i,
+  .fourth-skill i {
+    font-size: 45px;
+    margin-right: 45px;
+  }
+
+  .contact-container {
+    height: auto;
+    gap: 40px;
+    padding-bottom: 20px;
+  }
+
+  .contact-title {
+    font-size: 35px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .email-card,
+  .linkedin-card,
+  .github-card {
+    align-items: start;
+    text-align: start;
+    font-size: 18px;
+    padding-left: 20px;
+    width: 90%;
+    height: auto;
+    border-radius: 6px;
+    row-gap: 10px;
+    padding-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .email-click,
+  .linkedin-click,
+  .github-click {
+    opacity: 100;
+    font-family: "Outfit", sans-serif;
+    font-size: 12px;
+  }
 }
