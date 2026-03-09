@@ -7,6 +7,11 @@
   scroll-margin-top: 70px;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 button {
   border-style: none;
   cursor: pointer;
@@ -471,6 +476,7 @@ h3 {
 .email-card {
   background-color: black;
   color: white;
+  text-decoration: none;
 }
 
 .linkedin-card {
@@ -479,11 +485,13 @@ h3 {
   border-width: 3px;
   color: black;
   border-style: solid;
+  text-decoration: none;
 }
 
 .github-card {
   background-color: #0736fe;
   color: white;
+  text-decoration: none;
 }
 
 .github-card i,
@@ -642,7 +650,7 @@ h3 {
     transform: none;
   }
 
-   .first-skill:hover,
+  .first-skill:hover,
   .second-skill:hover,
   .third-skill:hover,
   .fourth-skill:hover {
